@@ -1,6 +1,6 @@
 10.times do |blog|
   Blog.create!(
-    title: "My Blog Post ${blog}",
+    title: "My Blog Post #{blog}",
     body: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
     laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
     beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut 
@@ -18,7 +18,7 @@ puts "10 blog posts created"
 
 5.times do |skill|
   Skill.create!(
-    title: "Rails skill ${skill}",
+    title: "Rails skill #{skill}",
     percent_utilized: 15
   )
 end
@@ -27,7 +27,7 @@ puts "5 skills created"
 
 9.times do |portfolio_item|
   Portfolio.create!(
-    title: "Portfolio title: ${portfolio_item}",
+    title: "Portfolio title: #{portfolio_item}",
     subtitle: "My Great Service",
     body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
