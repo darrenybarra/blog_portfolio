@@ -57,11 +57,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 
-
-# git commit -am "installed the devise gem"
-# rails generate devise:install
-# add localhost to development config file
-# rails g devise:views
-# rails generate devise User
-# add name to create devise user migration script
-# git commit and push
+gem 'bootstrap', '~> 4.1.1'
+gem 'jquery-rails'
