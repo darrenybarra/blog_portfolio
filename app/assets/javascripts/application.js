@@ -10,7 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+// IMPORTANT: Rails 5 needs jquery_ujs to perform DELETE requests and confirmation dialogs.
+// Use this article to perform these actions without jquery_ujs in order to increase performance since
+// jquery_ujs is over 100 kilobytes (minified, not gzipped) of unnecessary JavaScript
+// LINK: https://www.viget.com/articles/delete-in-rails-without-jquery-and-ujs/
+//
 //= require jquery3
+//= require jquery_ujs
 //= require popper
 //= require bootstrap-sprockets
 //= require activestorage
