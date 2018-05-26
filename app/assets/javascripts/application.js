@@ -16,9 +16,9 @@
 // LINK: https://www.viget.com/articles/delete-in-rails-without-jquery-and-ujs/
 //
 //= require jquery3
+//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require popper
-//= require bootstrap-sprockets
 //= require activestorage
 //= require turbolinks
 //= require_tree .
