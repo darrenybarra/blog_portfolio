@@ -17,15 +17,17 @@ ready = ->
     updated_order = []
     set_positions()
     $('.card').each (i) ->
-      updated_order.push
+      updated_order.push {
         id: $(this).data('id')
         position: i + 1
+      }
       return
-    $.ajax
+    $.ajax {
       type: 'PUT'
       url: '/portfolios/sort'
-      data: order: updated_order
+      data: { order: updated_order }
+    }
     return
-  return 
+  return
 
 $(document).ready ready
