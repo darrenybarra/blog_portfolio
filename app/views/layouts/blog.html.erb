@@ -16,24 +16,19 @@
     <%= render  "shared/blog_nav" %>
     <%= render  "shared/blog_masthead" %>
 
-    <!-- start of container and row elements -->
     <div class="container">
 
       <div class="row">
     
         <%= yield %>
 
-        <!-- start of sidebar -->
         <%= render "shared/blog_sidebar" %>
-        <!-- end of sidebar -->
 
       </div>
       
-      <!-- start of footer -->
       <%= render "shared/blog_footer" %>
-      <!-- end of footer -->
 
-
+      <%= alerts %>
       <%= source_helper("blog") %>
     </div>
   </body>
